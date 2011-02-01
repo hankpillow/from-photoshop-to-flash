@@ -37,7 +37,7 @@ If you have a psd called ~/tmp.psd, the exported folder will be like this: ~/tmp
 
 * * *
 
-## FlashImportAndPlace.jsx
+## FlashImportAndPlace.jsfl
 **Instalation:**
 
 *Windows Vista*<br>boot drive\Users\username\Local Settings\Application Data\Adobe\Flash CS4\language\Configuration\Commands
