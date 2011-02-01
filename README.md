@@ -31,9 +31,9 @@ If you have a psd called ~/tmp.psd, the exported folder will be like this: ~/tmp
 
 **The script works in two modes:**
 
-	- (0) All visible layers - This mode will export every visible layer in your psd file, including groups and sub-groups;
+- (0) All visible layers - This mode will export every visible layer in your psd file, including groups and sub-groups;
 	
-	- (1) Only selected - You can select **only one** layer, but if you want to select more than one **you have to** put it into a layer group and select the **group**;
+- (1) Only selected - You can select **only one** layer, but if you want to select more than one **you have to** put it into a layer group and select the **group**;
 
 For both modes, another dialog box will be opened asking about the format (PNG24 or JPEG) and the quality (only for JPEG, png24 is always 100% quality).
 
