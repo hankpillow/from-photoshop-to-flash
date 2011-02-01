@@ -40,22 +40,50 @@ var foo =
 
 	placeTimeline : function()
 	{
-		for (prop in this.doc.selection){
-			var o = this.doc.selection[prop];
+		var to_arrange = this.doc.selection;
+		if (to_arrange.length<0)
+		{
+			fl.trace("Nothing to arrange");
+			return;
+		}
+
+		for (prop in to_arrange)
+		{
+			to_arrange[prop] = {
+				name: to_arrange[prop].libraryItem.name,
+				target:to_arrange[prop]
+			};
+		}
+		
+		to_arrange = this.sort(to_arrange).reverse();
+
+		for (prop in to_arrange)
+		{
+			var o = to_arrange[prop].target;
 			if (o)
 			{
-				var p = this.getPositionFromName( o.libraryItem.name );
+				var p = this.getPositionFromName( to_arrange[prop].name );
 				if (p)
 				{
-					this.doc.selection[prop].x = p.x;
-					this.doc.selection[prop].y = p.y;
+					o.x = p.x;
+					o.y = p.y;
 				}
 			}
 			else
 			{
-				fl.trace("this object doesn't belong to the library or its not a bitmap object."+ o);
+				fl.trace("This object doesn't belong to the library."+ o);
 			}
 		}
+		this.doc.distributeToLayers();
+		this.doc.selectNone();
+	},
+	
+	sort : function( array )
+	{
+		array = array.sort(function(a,b){
+			return a.name<b.name ? -1 : 1;
+		});
+		return array;
 	},
 
 	placeLibrary : function()
@@ -66,6 +94,8 @@ var foo =
 			alert("Select in your library the files you want to add.");
 			return;
 		}
+
+		to_arrange = this.sort( to_arrange );
 
 		var count = 0;
 		while(count<to_arrange.length)
