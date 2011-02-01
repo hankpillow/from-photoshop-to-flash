@@ -6,7 +6,7 @@ Importing psd files using the 'Import' menu in Flash is not a big deal because t
 
 These scripts doesn't have to work together but these fellows are really powerful when used in the recommended way.
 
-First you choose in your psd file which layers you want to export than you run the <code>PhotoshopExportLayers</code> in the File/Scripts menu. It will export your list into a specific folder into the same level as your psd file are (the export always uses png24 format with 100% of quality).
+First you choose in your psd file which layers you want to export than you run the <code>PhotoshopExportLayers</code> in the File/Scripts menu. It will export your list into a specific folder into the same level as your psd file are.
 
 Then it's time to move to your flash file and run the <code>FlashImportAndPlace</code> in the Command/ menu and follow the dialog box.
 
@@ -26,14 +26,25 @@ Photoshop CS4 directory."*
 
 ### How it works?
 
-- A folder with name {psd_path}/{psd_name}-layers/ will be created to place all exported images.
+A folder with name {psd_path}/{psd_name}-layers/ will be created to place all exported images.
 If you have a psd called ~/tmp.psd, the exported folder will be like this: ~/tmp.psd-layers/
 
-- The script works in two modes:
+**The script works in two modes:**
 
-* (0) All visible layers - This mode will export every visible layer in your psd file, including groups and sub-groups. 
+	- (0) All visible layers - This mode will export every visible layer in your psd file, including groups and sub-groups;
+	
+	- (1) Only selected - You can select **only one** layer, but if you want to select more than one **you have to** put it into a layer group and select the **group**;
 
-* (1) Only selected - You can select **only one** layer, but if you want to select more than one **you have to** put it into a layer group and select the **group**.
+For both modes, another dialog box will be opened asking about the format (PNG24 or JPEG) and the quality (only for JPEG, png24 is always 100% quality).
+
+**Important:**
+
+	- Clipping Mask will be ignored;
+	- Invisible layers will be ignored;
+	- Empty layers will be ignored;
+	- Layers with content fully out of stage will be ignored. 
+	- Layers with layer mask, vector mask or filter mask will be ignored.
+	- Basicaly this script should work with simple art layers, so before running the script fix your messy psd.
 
 * * *
 
@@ -64,7 +75,7 @@ This script works in two different ways:
 
 **A - Importing to Flash:**
 
-	1. Go to File/Import, and select the files you want to add.
+	1. Go to File/Import to Stage, and select the files you want to add.
 
 	2. After importing usually Flash keeps all imported files selected (if not, select just the files you want do place properly).
 
