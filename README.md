@@ -22,7 +22,7 @@ Photoshop CS4 directory."*
 
 [documentation](https://docs.google.com/viewer?url=http://www.adobe.com/content/dam/Adobe/en/devnet/photoshop/pdfs/photoshop_cs4_scripting_guide.pdf) page 20.
 
-*Tip: Save your git files wherever you want and just copy an alias for them into these Adobe's structure.*
+*Tip: Save your git rep wherever you want and just create an alias from the proper file and move it to the Adobe's structure.*
 
 ### How it works?
 
@@ -48,7 +48,7 @@ If you have a psd called ~/tmp.psd, the exported folder will be like this: ~/tmp
 
 [documentation](http://help.adobe.com/en_US/Flash/10.0_ExtendingFlash/WS5b3ccc516d4fbf351e63e3d118a9024f3f-7fe8.html#WS5b3ccc516d4fbf351e63e3d118a9024f3f-7fe3).
 
-*Tip: Save your git files wherever you want and just copy an alias for them into these Adobe's structure.*
+*Tip: Save your git rep wherever you want and just create an alias from the proper file and move it to the Adobe's structure.*
 
 ### How it works?
 
