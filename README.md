@@ -109,6 +109,6 @@ Remeber, this is almost a kick-off script!
 
 [flash docs](http://help.adobe.com/en_US/Flash/10.0_ExtendingFlash/)
 
-These scripts were test in cs4 and cs5.
+These scripts were tested in cs4 and cs5 (Mac OS 10.6 and 10.5).
 
 Happy coding!
