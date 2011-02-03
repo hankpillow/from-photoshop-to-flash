@@ -1,8 +1,8 @@
 # About
 
-This project was created to do easily the work of export images from your Photoshop's Layout and import them into your Flash file keeping the layout's position properly.
+This project was created to easily do the work of export images from your Photoshop's layout and import them into your Flash file keeping the layout's position properly.
 
-Importing psd files using the 'Import' menu in Flash is not a big deal because the Photoshop don't allow You to choose the quality, and the by default is low quality.
+Importing psd files using the 'Import' menu in Flash is not a big deal because the Photoshop doesn't allow You to choose the quality, and the by default is low quality.
 
 These scripts doesn't have to work together but these fellows are really powerful when used in the recommended way.
 
@@ -10,7 +10,7 @@ First you choose in your psd file which layers you want to export than you run t
 
 Then it's time to move to your flash file and run the <code>FlashImportAndPlace</code> in the Command/ menu and follow the dialog box.
 
-To know better hot it works and how to install it, see bellow:
+To know better how it works and how to install it, see bellow:
 
 * * *
 
