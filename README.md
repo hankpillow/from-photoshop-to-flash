@@ -10,12 +10,12 @@ First you choose in your psd file which layers you want to export than you run t
 
 Then it's time to move to your flash file and run the <code>FlashImportAndPlace</code> in the Command/ menu and follow the dialog box.
 
-To know better how it works and how to install it, see bellow:
+To find out how it works and how to install it, see bellow:
 
 * * *
 
 ## PhotoshopExportLayers.jsx
-**Instalation:**
+**Installation:**
 
 *"Save file as a text file with a .jsx file name extension in the Presets/Scripts folder in your Adobe
 Photoshop CS4 directory."*
@@ -49,7 +49,7 @@ For both modes, another dialog box will be opened asking about the format (PNG24
 * * *
 
 ## FlashImportAndPlace.jsfl
-**Instalation:**
+**Installation:**
 
 *Windows Vista*<br>boot drive\Users\username\Local Settings\Application Data\Adobe\Flash CS4\language\Configuration\Commands
 
